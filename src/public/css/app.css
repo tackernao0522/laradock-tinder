@@ -72,7 +72,11 @@ body {
   line-height: 1.6;
   color: #212529;
   text-align: left;
+<<<<<<< HEAD
   background-color: #f8fafc;
+=======
+  background-color: #fff;
+>>>>>>> bf624c389e4aa243bcc928d44a39cf77529e2298
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -511,7 +515,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #f8fafc;
+  background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -4240,6 +4244,7 @@ input[type=button].btn-block {
 }
 
 .custom-range:focus::-webkit-slider-thumb {
+<<<<<<< HEAD
   box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
 }
 
@@ -4249,6 +4254,17 @@ input[type=button].btn-block {
 
 .custom-range:focus::-ms-thumb {
   box-shadow: 0 0 0 1px #f8fafc, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+=======
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+}
+
+.custom-range:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+}
+
+.custom-range:focus::-ms-thumb {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+>>>>>>> bf624c389e4aa243bcc928d44a39cf77529e2298
 }
 
 .custom-range::-moz-focus-outer {
@@ -4454,8 +4470,13 @@ input[type=button].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
+<<<<<<< HEAD
   background-color: #f8fafc;
   border-color: #dee2e6 #dee2e6 #f8fafc;
+=======
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+>>>>>>> bf624c389e4aa243bcc928d44a39cf77529e2298
 }
 
 .nav-tabs .dropdown-menu {
@@ -15987,6 +16008,7 @@ readers do not read off random characters that represent icons */
 .fa-sun:before {
   content: "\F185";
 }
+<<<<<<< HEAD
 
 .fa-superpowers:before {
   content: "\F2DD";
@@ -16000,6 +16022,21 @@ readers do not read off random characters that represent icons */
   content: "\F3F9";
 }
 
+=======
+
+.fa-superpowers:before {
+  content: "\F2DD";
+}
+
+.fa-superscript:before {
+  content: "\F12B";
+}
+
+.fa-supple:before {
+  content: "\F3F9";
+}
+
+>>>>>>> bf624c389e4aa243bcc928d44a39cf77529e2298
 .fa-surprise:before {
   content: "\F5C2";
 }
@@ -17047,3 +17084,28 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+<<<<<<< HEAD
+=======
+.loginPage_contents {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.loginPage_contents_title {
+  margin-top: 12vh;
+}
+
+.loginPage_contents_btn {
+  display: block;
+  max-width: 400px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: #fd5068;
+  color: #fff;
+}
+
+>>>>>>> bf624c389e4aa243bcc928d44a39cf77529e2298

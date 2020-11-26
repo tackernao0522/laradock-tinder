@@ -41,7 +41,7 @@ class UsersTableSeeder extends Seeder
                 'email' => 'user4@example.com',
                 'sex' => '0',
                 'self_introduction' => 'イーロンです',
-                'img_name' => 'sample004.jpg',
+                'img_name' => 'sample004.jpeg',
                 'password' => Hash::make('password123'),
             ],
         ]);

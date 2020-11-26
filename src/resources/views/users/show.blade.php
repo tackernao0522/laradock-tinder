@@ -20,7 +20,7 @@
 
     <div class="userAction">
       <div class="userAction_edit userAction_common">
-        <i class="fas fa-edit fa-2x"></i>
+        <a href="{{ route('users.edit', ['id' => $user->id]) }}"><i class="fas fa-edit fa-2x"></i></a>
         <span>情報を編集</span>
       </div>
       <div class="userAction_logout userAction_common">

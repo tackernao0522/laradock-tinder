@@ -17,4 +17,4 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
-Route::get('/like', 'ReactionController@create');
+Route::post('/like', 'ReactionController@create');

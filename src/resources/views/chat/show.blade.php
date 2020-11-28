@@ -6,11 +6,12 @@
     <a href="{{ route('matching') }}" class="linkToMatching"></a>
     <div class="chatPartner">
       <div class="chatPartner_img"><img src="/storage/images/{{ $chat_room_user->img_name }}"></div>
+      <div class="chatPartner_name">{{ $chat_room_user->name }}</div>
     </div>
   </header>
   <div class="container">
     <div class="messagesArea messages">
-      @foreach($chat_message as $message)
+      @foreach($chat_messages as $message)
       <div class="message">
         @if ($message->user_id = Auth::id())
         <span>{{ Auth::user()->name }}</span>

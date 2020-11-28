@@ -17,7 +17,7 @@
           <div class="matchingPerson_name">{{ $user->name }}</div>
           <form method="POST" action="{{ route('chat.show') }}">
             @csrf
-            <input name="user_id" type="hidden" value="user->id">
+            <input name="user_id" type="hidden" value="{{ $user->id }}">
             <button type="submit" class="chatForm_btn">チャットを開く</button>
           </form>
         </div>

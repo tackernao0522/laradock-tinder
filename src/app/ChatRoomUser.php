@@ -14,7 +14,7 @@ class ChatRoomUser extends Model
 
     public function chatRoom()
     {
-        return $this->belongsTo('App\Chatroom');
+        return $this->belongsTo('App\ChatRoom');
     }
 
     public function user()

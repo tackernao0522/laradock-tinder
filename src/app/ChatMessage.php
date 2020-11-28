@@ -10,12 +10,12 @@ class ChatMessage extends Model
     [
         'chat_room_id',
         'user_id',
-        'message',
+        'message'
     ];
 
     public function chatRoom()
     {
-        return $this->belongsTo('App\chatRoom');
+        return $this->belongsTo('App\ChatRoom');
     }
 
     public function user()

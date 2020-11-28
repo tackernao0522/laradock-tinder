@@ -37,6 +37,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    // Relation
     public function toUserId()
     {
         return $this->hasMany('App\Reaction', 'to_user_id', 'id');
@@ -45,5 +46,15 @@ class User extends Authenticatable
     public function fromUserId()
     {
         return $this->hasMany('App\Reaction', 'from_user_id', 'id');
+    }
+
+    public function chatMessages()
+    {
+        return $this->hasMany('App\ChatMessage');
+    }
+
+    public function chatRoomUsers()
+    {
+        return $this->hasMany('App\ChatRoomUser');
     }
 }

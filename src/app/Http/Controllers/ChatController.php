@@ -34,7 +34,7 @@ class ChatController extends Controller
             $chat_room_id = $latest_chat_room->id;
 
             // 新規登録 モデル側 $fillableで許可したフィールドを指定して保存
-            ChatRoomUser::crate(
+            ChatRoomUser::create(
                 [
                     'chat_room_id' => $chat_room_id,
                     'user_id' => Auth::id(),
@@ -58,7 +58,7 @@ class ChatController extends Controller
         $chat_room_user = User::findOrFail($matching_user_id);
 
         // チャット相手のユーザー名を取得(JS用)
-        $chat_room_user_name = $chat_user->name;
+        $chat_room_user_name = $chat_room_user->name;
 
         $chat_messages = ChatMessage::where('chat_room_id', $chat_room_id)
             ->orderBy('created_at')

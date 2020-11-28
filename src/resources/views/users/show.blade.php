@@ -27,7 +27,7 @@
         <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fas fa-cog fa-2x"></i></a>
         <span>ログアウト</span>
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-          @csrf
+          {{ csrf_field() }}
         </form>
       </div>
     </div>

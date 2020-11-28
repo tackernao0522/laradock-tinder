@@ -9,6 +9,8 @@
             </li>
             <li class="appIcon"><a href="{{ route('home') }}"><img src="/storage/images/techpit-match-icon.png"></a>
             </li>
+
+            <li class="messageIcon"><a href="{{ route('matching') }}"><i class="fas fa-2x fa-comments"></a></i></li>
         </ul>
     </nav>
     <div id="tinderslide">
